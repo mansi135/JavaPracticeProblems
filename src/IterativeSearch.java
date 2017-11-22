@@ -2,7 +2,7 @@
 
 public class IterativeSearch {
 	public static void main(String[] args) {
-		int elem=7;
+		int elem=4;
 		int a[] = {6,3,9,1,4,0};
 		int index;
 		index = find(a,elem);
@@ -14,7 +14,7 @@ public class IterativeSearch {
 		return find_r(a,elem,0);
 	}
 	
-	public static int find_r(int[] a, int elem, int indx) {
+	private static int find_r(int[] a, int elem, int indx) {
 		if(a.length==0 || indx == a.length) {
 			return -1;
 		}
