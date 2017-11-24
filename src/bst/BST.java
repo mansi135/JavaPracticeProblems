@@ -61,7 +61,7 @@ class Node {
 	 
 	 public void inOrderTraversal(Node n ) {
 		 
-		 if(n != null) {
+	/*	 if(n != null) {
 			
 			 inOrderTraversal (n.left);
 			 
@@ -69,10 +69,24 @@ class Node {
 			 
 			 inOrderTraversal (n.right);
 		 }
+		 */
 		 
+			 if (n.left != null) {
+				 inOrderTraversal(n.left);
+			 }
+			
+			 System.out.println(n.data);
+			
+			if (n.right != null) {
+				inOrderTraversal(n.right);
+				
+			}
 	 }
+	 
+	 
+ }
 	
-}
+
  
  
  public class BST{
